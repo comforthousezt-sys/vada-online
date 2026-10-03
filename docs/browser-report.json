@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "at": "2026-10-03T09:08:26.788Z",
+  "browser": "153.0.8010.0",
+  "checks": [
+    "production build in /vada/, Babylon canvas, home accessibility",
+    "dialog Escape and focus return, purchase, reload save, flat/3D toggle",
+    "renovation selects studio, leaves market unchanged",
+    "390px mobile layout without horizontal overflow",
+    "two players + bot, private room, atomic trade, acknowledged chat",
+    "dropped initial acknowledgment triggers reconnect and same-ID replay exactly once",
+    "reload restores original private seat"
+  ],
+  "errors": [],
+  "accessibility": [
+    {
+      "label": "home",
+      "violations": []
+    },
+    {
+      "label": "practice setup",
+      "violations": []
+    },
+    {
+      "label": "practice match",
+      "violations": []
+    },
+    {
+      "label": "mobile home",
+      "violations": []
+    },
+    {
+      "label": "online match",
+      "violations": []
+    }
+  ]
+}

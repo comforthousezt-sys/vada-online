@@ -1,0 +1,14 @@
+Options -Indexes
+DirectoryIndex index.html
+AddDefaultCharset UTF-8
+<IfModule mod_mime.c>
+  AddType application/javascript .js
+  AddType image/svg+xml .svg
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "^(index\.html|config\.js)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

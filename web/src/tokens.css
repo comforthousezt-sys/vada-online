@@ -1,0 +1,23 @@
+:root {
+  --bg: #12242a;
+  --surface: #1d343a;
+  --surface-high: #28434a;
+  --gold: #e3bd76;
+  --gold-hover: #f0cd90;
+  --text: #f1eadc;
+  --muted: #b4c1bd;
+  --danger: #f39c92;
+  --success: #adca9b;
+  --line: #3d5355;
+  --ink: #17272b;
+  --shadow: 0 14px 40px #0004;
+  --radius: 6px;
+  --panel-radius: 12px;
+  --space: 6px;
+  --display: Georgia, "Times New Roman", serif;
+  --body: "Segoe UI", Arial, sans-serif;
+  --utility: Consolas, monospace;
+  --scrollbar-thumb: #637b7b;
+  --scrollbar-track: #14272d;
+  --scrollbar-hover: #90a09a;
+}

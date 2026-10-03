@@ -1,0 +1,6 @@
+
+> vada-online@0.2.0-alpha.1 format:check
+> prettier --check web/src shared server tests *.json *.ts *.yaml
+
+Checking formatting...
+All matched files use Prettier code style!

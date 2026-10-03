@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "health": {
+    "ok": true,
+    "rulesVersion": "0.2.0-alpha.1",
+    "persistence": "local-files"
+  },
+  "createStatus": 201,
+  "gracefulExit": 0,
+  "stderr": ""
+}

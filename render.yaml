@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: vada-rooms
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm ci --include=dev && npm run build:server
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: 24.19.0
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_SSL_CA_BASE64
+        sync: false
+      - key: ALLOW_EPHEMERAL
+        value: "false"

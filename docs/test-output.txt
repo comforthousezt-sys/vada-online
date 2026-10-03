@@ -1,0 +1,29 @@
+
+> vada-online@0.2.0-alpha.1 test
+> node --import tsx --test tests/*.test.ts
+
+✔ content has exactly 30 named cards across four categories and 12 assets (1.141765ms)
+✔ the tenth shared turn fixes attendance and does not reset the queue (3.211643ms)
+✔ the client never receives other hands, secret objectives, deck or RNG (0.637378ms)
+✔ invalid travel and purchases cannot mutate a source state (0.510456ms)
+✔ absent players cannot vote and a four-player law needs three yes votes (2.790294ms)
+✔ reaction blocks an attack and advances only one turn (0.463332ms)
+✔ trade is bilateral, private, atomic and revalidates resources (1.318268ms)
+✔ untrusted asset IDs cannot poison offers or asset-targeted cards (1.325405ms)
+✔ all 3-, 4- and 5-player bot matches reach exactly six sessions and 60 turns (1214.5764ms)
+✔ final score excludes future income and exposes objectives only after finishing (0.91493ms)
+✔ real HTTP and WebSocket clients enforce origins, authentication and private views (76.351361ms)
+✔ an expired room reports a fatal error without crashing the server (17.908075ms)
+✔ credentials are hashed and room code cannot authenticate another player (9.051813ms)
+✔ replayed operations apply once; stale and changed-ID payloads are rejected (6.190625ms)
+✔ a failed persistence write neither changes state nor acknowledges the action (3.857742ms)
+✔ simultaneous spending commands serialize and cannot purchase twice (6.947978ms)
+✔ server restart restores state, credentials, secrets, deadlines and operation deduplication (21.059305ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1415.276157

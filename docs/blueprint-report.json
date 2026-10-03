@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "schema": "https://render.com/schema/render.yaml.json",
+  "validation": "official JSON Schema; no remote deploy",
+  "errors": []
+}

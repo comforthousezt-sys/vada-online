@@ -1,0 +1,19 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": ["web/src"],
+  "locale": "uk-UA",
+  "canonicalMap": "UX-CONTRACT.md",
+  "requiredCapabilities": ["Select/Listbox", "Form", "Scrollbar", "Toast"],
+  "ownership": { "Select/Listbox": "native" },
+  "requiredCommands": ["unit", "typecheck", "build", "browser"],
+  "commands": {
+    "unit": "npm test",
+    "typecheck": "npm run typecheck",
+    "build": "npm run build",
+    "browser": "npm run test:browser"
+  },
+  "evidence": {
+    "failurePaths": "tests/server.test.ts",
+    "browserFlows": "tests/browser.ts"
+  }
+}
