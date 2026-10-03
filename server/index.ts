@@ -355,10 +355,19 @@ async function boot() {
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href)
   void boot().catch((e) => {
+    // Log only the short machine error code. Messages, stacks and URL inputs
+    // may contain database credentials and must never reach deployment logs.
+    const code =
+      e instanceof Error &&
+      "code" in e &&
+      typeof e.code === "string" &&
+      /^[A-Z0-9_]{2,64}$/.test(e.code)
+        ? e.code
+        : "UNKNOWN";
     console.error(
       e instanceof Error && e.message.startsWith("Set DATABASE_URL")
         ? e.message
-        : "VADA startup failed. Check origins, database connection, schema and instance count.",
+        : `VADA startup failed [${code}]. Check origins, database connection, schema and instance count.`,
     );
     process.exitCode = 1;
   });
