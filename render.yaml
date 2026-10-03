@@ -11,10 +11,9 @@ services:
       - key: NODE_VERSION
         value: 24.19.0
       - key: ALLOWED_ORIGINS
-        sync: false
+        value: https://vadagames.com
       - key: DATABASE_URL
         sync: false
-      - key: DATABASE_SSL_CA_BASE64
-        sync: false
+      # If a custom database CA is needed, add DATABASE_SSL_CA_BASE64 in Render.
       - key: ALLOW_EPHEMERAL
         value: "false"
